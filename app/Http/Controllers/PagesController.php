@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class PagesController extends Controller
+{
+  
+    public function about(){
+        return view('about');
+    }
+    public function services(){
+        return view('services');
+    }
+    public function portfolio(){
+        return view('portfolio');
+    }
+    public function blog(){
+        return view('blog');
+    }
+    public function contact(){
+        return view('contact');
+    }
+ 
+}
