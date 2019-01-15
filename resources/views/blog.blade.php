@@ -30,14 +30,25 @@
                                 <h4 class="widget-title">
                                     Instagram
                                 </h4>
-                                <ul>
+
+
+              
+                      
+           
+                
+
+                 
+
+                        
+                             
+                                {{-- <ul>
                                     <li><a href="#"><img src="assets/img/blog/instagram/inst5.png" alt="instagram"></a></li>
                                     <li><a href="#"><img src="assets/img/blog/instagram/inst2.png" alt="instagram"></a></li>
                                     <li><a href="#"><img src="assets/img/blog/instagram/inst3.png" alt="instagram"></a></li>
                                     <li><a href="#"><img src="assets/img/blog/instagram/inst4.png" alt="instagram"></a></li>
                                     <li><a href="#"><img src="assets/img/blog/instagram/inst5.png" alt="instagram"></a></li>
                                     <li><a href="#"><img src="assets/img/blog/instagram/inst6.png" alt="instagram"></a></li>
-                                </ul>
+                                </ul> --}}
                             </div>
                             <div class="widget widget_tags">
                                 <h4 class="widget-title">

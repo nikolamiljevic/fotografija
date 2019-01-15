@@ -18,7 +18,7 @@ class PhotosController extends Controller
     {
        $photos = Photo::orderBy('created_at', 'asc')->get();
        $categories = Category::pluck('name','id');
-        return view('home')->with(compact('photos','categories'));
+        return view('home2')->with(compact('photos','categories'));
 
     }
 

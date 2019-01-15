@@ -70,11 +70,7 @@
                                 Services
                             </a>
                         </li>
-                        <li>
-                            <a href="{{url('portfolio')}}">
-                                Portfolio
-                            </a>
-                        </li>
+                    
                         <li>
                             <a href="{{url('blog')}}">
                                 Blog

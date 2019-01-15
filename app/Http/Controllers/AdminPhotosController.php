@@ -126,7 +126,8 @@ class AdminPhotosController extends Controller
      */
     public function destroy($id)
     {
-        $photo = Photo::find($id)->delete();
+        $photo = Photo::find($id);
+        $photo->delete();
         return redirect('admin');
     }
 }

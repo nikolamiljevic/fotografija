@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 
-Route::resource('admin','AdminPhotosController');
+ Route::resource('admin','AdminPhotosController')->middleware('auth');
 
 
 Route::get('about','PagesController@about');
@@ -28,3 +28,10 @@ Route::get('contact','PagesController@contact');
 
 
 Route::resource('photos','PhotosController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
