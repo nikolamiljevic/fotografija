@@ -20,7 +20,7 @@
 
         <tr>
             <td>{{$photo->id}}</td>
-            <td><img height="50" src="{{asset('storage/photos/'.$photo->photo)}}"></td>
+            <td><img height="150" src="{{asset('storage/photos/'.$photo->photo)}}"></td>
             <td><a href="{{route('admin.edit',$photo->id)}}">{{$photo->title}}</a></td>  
             <td>{{$photo->category->name}}</td>
             <td>{{$photo->created_at->diffForHumans()}}</td>

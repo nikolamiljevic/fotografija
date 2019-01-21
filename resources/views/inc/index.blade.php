@@ -54,34 +54,38 @@
     
                 <!--main menu -->
                 <div class="side_menu_section">
-                    <ul class="menu_nav">
-                        <li >
-                        <a href="{{url('photos')}}">
-                                Home
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="{{url('about')}}">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{url('services')}}">
-                                Services
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a href="{{url('blog')}}">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{url('contact')}}">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
+                        <ul class="menu_nav">
+                                <li >
+                                <a href="{{url('photos')}}">
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('about')}}">
+                                        O meni
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('services')}}">
+                                        Usluge
+                                    </a>
+                                </li>
+                               
+                                <li>
+                                    <a href="{{url('blog')}}">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('contact')}}">
+                                       Kontakt
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="ig" style="padding-left:47px">
+                                <a href="https://www.instagram.com/iksi_lucius/" target="_blank">
+                                <img src="{{asset('images/instagram.png')}}" alt="services icon" style="height:30px"></a>
+                            </div>
                 </div>
                 <!--main menu end -->
     

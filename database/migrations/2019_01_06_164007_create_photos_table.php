@@ -18,7 +18,6 @@ class CreatePhotosTable extends Migration
             $table->integer('category_id')->unsigned();
             $table->string('photo');
             $table->string('title');
-            //$table->string('description');
             $table->string('size');
             $table->timestamps();
         });

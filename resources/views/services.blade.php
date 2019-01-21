@@ -16,10 +16,25 @@
 <!--=================== services boxes start here  ====================-->
                                         <div class="col-md-6 col-12">
                                             <div class="img_box_one text-left">
-                                                <img src="assets/img/icons/typo.png" alt="services icon">
+                                                {{-- <img src="{{asset('images/icon5.png')}}" alt="services icon"> --}}
                                                 <div class="content">
                                                     <h5>
-                                                        Typography Courses
+                                                        Enterijer-eksterijer
+                                                    </h5>
+                                                    <p>
+                                                    Stranice na kojima se nalaze profesionalne fotografije imaju 70-90% više poseta od stranica sa nedovoljno dobrim fotografijama.
+                                                    Ucinite da vas prostor bude u punom sjaju na vasoj poslovnoj stranici.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="img_box_one text-left">
+                                                {{-- <img src="{{asset('images/icon5.png')}}" alt="services icon"> --}}
+                                                
+                                                <div class="content">
+                                                    <h5>
+                                                       Fotografisanje proizvoda
                                                     </h5>
                                                     <p>
                                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum.
@@ -29,44 +44,33 @@
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <div class="img_box_one text-left">
-                                                <img src="assets/img/icons/flask.png" alt="services icon">
+                                                {{-- <img src="{{asset('images/icon5.png')}}" alt="services icon"> --}}
                                                 <div class="content">
                                                     <h5>
-                                                        Mix and Match
+                                                       Fotografisanje dogadjaja
                                                     </h5>
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum.
+                                                        Momenti od znacaja zasluzuju da budu zabelezeni na najbolji nacin.
+                                                        Zajedno stvaramo momente koje delite sa drugima.
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <div class="img_box_one text-left">
-                                                <img src="assets/img/icons/compass.png" alt="services icon">
+                                                {{-- <img src="{{asset('images/icon5.png')}}" alt="services icon"> --}}
                                                 <div class="content">
                                                     <h5>
-                                                        Architecture Plans
+                                                       Portreti-Lifestyle
                                                     </h5>
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum.
+                                                        Prikazite sebe u najboljem svetlu. Neka vasa jedinstvenost i kreativnost izadje u prvi plan.
+                                                        
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-12">
-                                            <div class="img_box_one text-left">
-                                                <img src="assets/img/icons/magic.png" alt="services icon">
-                                                <div class="content">
-                                                    <h5>
-                                                        Brand Identity
-                                                    </h5>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-12">
+                                        {{-- <div class="col-md-6 col-12">
                                             <div class="img_box_one text-left">
                                                 <img src="assets/img/icons/idea.png" alt="services icon">
                                                 <div class="content">
@@ -91,13 +95,13 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
  <!--=================== services boxes end here  ====================-->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-5 img_section" style="background-image: url('assets/img/bg/service_bg.png');"></div>
+                        <div class="col-md-6 col-5 img_section" style="background-image: url('{{asset('storage/photos/'.$photos->photo)}}');"></div>
                     </div>
                 </div>
 <!--=================== image card end here ====================-->

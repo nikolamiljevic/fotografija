@@ -52,10 +52,21 @@
 
                                         <div class="testimonial_box">
                                             <p>
+                                                "This nightscape is just delightful. I love the little pockets of light shining on the autumnal colors. There is an interesting mystery of this photograph, like the moments before *something* is about to happen. Great work creating a mood and suspense to a quiet moment."
+                                            </p>
+                                            <div class="testimonial_author">
+                                               
+                                                <h5>Kristen McNicholas</h5>
+                                                <p>Associate Photo Editor <span>Nat Geo Your Shot</span></p>
+                                            </div>
+                                        </div>
+{{-- 
+                                        <div class="testimonial_box">
+                                            <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus.
                                             </p>
                                             <div class="testimonial_author">
-                                                <img src="assets/img/user.png" alt="author">
+                                                
                                                 <h5>maria smith</h5>
                                                 <p>project manager <span>company</span></p>
                                             </div>
@@ -66,7 +77,7 @@
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus.
                                             </p>
                                             <div class="testimonial_author">
-                                                <img src="assets/img/user.png" alt="author">
+                                                
                                                 <h5>maria smith</h5>
                                                 <p>project manager <span>company</span></p>
                                             </div>
@@ -77,28 +88,17 @@
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus.
                                             </p>
                                             <div class="testimonial_author">
-                                                <img src="assets/img/user.png" alt="author">
+                                                
                                                 <h5>maria smith</h5>
                                                 <p>project manager <span>company</span></p>
                                             </div>
-                                        </div>
-
-                                        <div class="testimonial_box">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus.
-                                            </p>
-                                            <div class="testimonial_author">
-                                                <img src="assets/img/user.png" alt="author">
-                                                <h5>maria smith</h5>
-                                                <p>project manager <span>company</span></p>
-                                            </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <!--===================testimonial end====================-->
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-5 img_section" style="background-image: url('assets/img/bg/about.png');"></div>
+                        <div class="col-md-6 col-5 img_section" style="background-image: url('{{asset('storage/photos/'.$photos->photo)}}');"></div>
                     </div>
                 </div>
             </div>

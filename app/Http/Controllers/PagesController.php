@@ -10,25 +10,25 @@ class PagesController extends Controller
 {
   
     public function about(){
-        return view('about');
+        $photos = Photo::where('id', 1)->first();
+        return view('about',compact('photos'));
     }
-    public function services(){
-        return view('services');
-    }
-    public function portfolio(){
-        
-        // $photos = Photo::orderBy('created_at', 'asc')->get();
-        // $categories = Category::pluck('name','id');
-        //  return view('portfolio')->with(compact('photos','categories'));
 
-        return view('portfolio');
+    public function services(){
+        $photos = Photo::where('id', 9)->first();
+
+        return view('services',compact('photos'));
     }
+
     public function blog(){
         
-        //  $selecting = 'https://rsshub.app/instagram/user/iksi_lucius';
-        //  $xml = simplexml_load_file($selecting);
-          
-        return view('blog',compact('selecting','xml'));
+       
+        $photos = Photo::where('id', 19)->first();
+        // $instagram = Photo::where('category_id','2')->take(3)->get();
+        $instagram = Photo::latest('created_at')->take(3)->get();
+        
+         return view('blog',compact('photos','instagram'));
+      
     }
 
     public function contact(){
