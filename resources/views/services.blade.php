@@ -51,7 +51,7 @@
                                                     </h5>
                                                     <p>
                                                         Momenti od znacaja zasluzuju da budu zabelezeni na najbolji nacin.
-                                                        Zajedno stvaramo momente koje delite sa drugima.
+                                                        Zajedno stvaramo momente koje sa ponosom delite sa drugima.
                                                     </p>
                                                 </div>
                                             </div>

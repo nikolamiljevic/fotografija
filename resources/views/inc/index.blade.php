@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +26,11 @@
     <link rel="stylesheet" href="{{asset('css/includecss/animate.min.css')}}">
     <!-- Custom styles for this template -->
     <link href="{{asset('css/includecss/main.css')}}" rel="stylesheet">
-
+<style>
+.invalid-feedback{
+    display:block;
+}
+</style>
 </head>
 <body>
     <div class="loader">
@@ -55,7 +58,7 @@
                 <!--main menu -->
                 <div class="side_menu_section">
                         <ul class="menu_nav">
-                                <li >
+                                <li>
                                 <a href="{{url('photos')}}">
                                         Portfolio
                                     </a>

@@ -23,14 +23,21 @@ Route::get('/', function () {
 Route::get('about','PagesController@about');
 Route::get('services','PagesController@services');
 Route::get('blog','PagesController@blog');
-Route::get('contact','PagesController@contact');
 
+Route::get('contact',[
+  'uses' => 'PagesController@create'
+]);
+
+Route::post('contact',[
+    'uses' => 'PagesController@store',
+    'as'=>'contact.store'
+  ]);
 
 Route::resource('photos','PhotosController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

@@ -11,6 +11,9 @@
                         <div class="col-md-6 col-7 content_section">
                             <!--=================== contact info and form start====================-->
                             <div class="content_box">
+                                @if(Session::has('flash_message'))
+                            <div class="alert alert-success">{{Session::get('flash_message')}}</div>
+                                @endif
                                 <div class="content_box_inner">
                                     <div>
                                         <h3>
@@ -54,23 +57,37 @@
                                             </li>
                                         </ul>
 
-                                        <div class="mt75 row justify-content-center">
-                                            <div class="col-lg-6 col-12">
-                                                <input type="text" placeholder="Name" class="form-control">
+                                    <form method="post" action="{{route('contact.store')}}">
+                                        {{ csrf_field() }}
+                                            <div class="mt75 row justify-content-center">
+                                                <div class="col-lg-6 col-12">
+                                                    <input type="text" placeholder="Name" class="form-control" name="name">
+                                            @if($errors->has('name'))
+                                                <small class="form-text invalid-feedback">{{$errors->first('name')}}</small>
+                                            @endif
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <input type="email" placeholder="E-Mail" class="form-control" name="email">
+                                            @if($errors->has('email'))
+                                                    <small class="form-text invalid-feedback">{{$errors->first('email')}}</small>
+                                            @endif
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" placeholder="Subject" class="form-control" name="subject">
+                                                    
+                                                </div>
+                                                <div class="col-12">
+                                                    <textarea  placeholder="Massage" class="form-control" name="message" cols="4" rows="4"></textarea>
+                                            @if($errors->has('message'))
+                                                    <small class="form-textarea invalid-feedback">{{$errors->first('message')}}</small>
+                                            @endif
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Send</button>
+                                                </div>
                                             </div>
-                                            <div class="col-lg-6 col-12">
-                                                <input type="email" placeholder="E-Mail" class="form-control">
-                                            </div>
-                                            <div class="col-12">
-                                                <input type="text" placeholder="Subject" class="form-control">
-                                            </div>
-                                            <div class="col-12">
-                                                <textarea  placeholder="Massage" class="form-control" cols="4" rows="4"></textarea>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Send</button>
-                                            </div>
-                                        </div>
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>

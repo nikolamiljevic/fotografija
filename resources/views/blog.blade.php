@@ -27,16 +27,16 @@
                                                   *something* is about to happen. Great work creating a mood and suspense 
                                                   to a quiet moment."
                                             </p>
-                                            <div style="background-color:rgb(153,137,110,0.2);padding:5px;border-radius:5px">
+                                            <div style="background-color:rgb(51,51,51,0.2);padding:5px;border-radius:5px">
                                                 <h5>Kristen McNicholas</h5>
                                                 <p>Associate Photo Editor <span>Nat Geo Your Shot</span></p>
                                             </div>
                                 </div>
 <hr>
                                 <ul>
-                                    <li><a href="https://yourshot.nationalgeographic.com/photos/13043096/" style="color:black">National Geographic</a></li>
-                                    <li><a href="https://www.instagram.com/iksi_lucius/" style="color:black">Instagram</a></li>
-                                    <li><a href="#" style="color:black">Facebook</a></li>
+                                    <li><a href="https://yourshot.nationalgeographic.com/photos/13043096/" style="color:black" target="_blanc">National Geographic</a></li>
+                                    <li><a href="https://www.instagram.com/iksi_lucius/" style="color:black" target="_blanc" >Instagram</a></li>
+                                    <li><a href="#" style="color:black" target="_blanc">Facebook</a></li>
                                     
                                 </ul>
                             </div>
@@ -48,30 +48,17 @@
                             @foreach($instagram as $insta)
                             <li><a href="#"><img src="{{asset('storage/photos/'.$insta->photo)}}" alt="instagram"></a></li>
                             @endforeach    
-                            
-                            
                        
-                             
-                             
-                            
-                                    {{-- <li><a href="#"><img src="assets/img/blog/instagram/inst2.png" alt="instagram"></a></li>
-                                    <li><a href="#"><img src="assets/img/blog/instagram/inst3.png" alt="instagram"></a></li>
-                                    <li><a href="#"><img src="assets/img/blog/instagram/inst4.png" alt="instagram"></a></li>
-                                    <li><a href="#"><img src="assets/img/blog/instagram/inst5.png" alt="instagram"></a></li>
-                                    <li><a href="#"><img src="assets/img/blog/instagram/inst6.png" alt="instagram"></a></li> --}}
                                 </ul>  
                             </div>
                             <div class="widget widget_tags">
-                                <h4 class="widget-title">
-                                    Tags
-                                </h4>
+                           
                                 <ul>
                                     <li><a href="#">branding</a></li>
                                     <li><a href="#">identity</a></li>
                                     <li><a href="#">design</a></li>
                                     <li><a href="#">inspiration</a></li>
-                                    <li><a href="#">web design</a></li>
-                                    <li><a href="#">video</a></li>
+                                    
                                     <li><a href="#">photography</a></li>
                                 </ul>
                             </div>
