@@ -17,44 +17,33 @@
                                 <div class="content_box_inner">
                                     <div>
                                         <h3>
-                                            Get in touch with us
+                                            Kontakt
                                         </h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue.
+                                        Hajde da radimo zajedno. <br>
+                                        Za sva pitanja i poslovne ponude slobodno me kontaktirajte.    
                                         </p>
 
                                         <ul class="nosyely_list pt50">
                                             <li>
                                                 <div class="img_box_two">
-                                                    <img src="assets/img/icons/satelite.png" alt="info list">
+                                     
                                                     <div class="content align-items-center">
-                                                        <p>
-                                                            Rosia Road , No234/56<br/>
-                                                            Gibraltar , UK
-                                                        </p>
+                                <img src="{{asset('images/instagram.png')}}" alt="services icon" style="height:30px"></a> 
+                                <a href="https://www.instagram.com/iksi_lucius/" style="color:black" target="_blanc" >Instagram</a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="img_box_two">
-                                                    <img src="assets/img/icons/scheme.png" alt="info list">
+                                                    {{-- <img src="assets/img/icons/scheme.png" alt="info list"> --}}
                                                     <div class="content align-items-center">
-                                                        <p>
-                                                            contact@cocoontemplate.com
-                                                        </p>
+                                                            <img src="{{asset('images/facebook.png')}}" alt="services icon" style="height:30px"></a> 
+                                                        <a href="#" style="color:black" target="_blanc">Facebook</a>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="img_box_two">
-                                                    <img src="assets/img/icons/smartphone.png" alt="info list">
-                                                    <div class="content align-items-center">
-                                                        <p>
-                                                            +5463 834 53 2245
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                    
                                         </ul>
 
                                     <form method="post" action="{{route('contact.store')}}">
@@ -93,10 +82,9 @@
                             </div>
                             <!--=================== contact info and form end====================-->
                         </div>
-                        <div class="col-md-6 col-5 img_section" style="background-color:#000;">
-                            <!--map -->
-                            <div id="map" data-lon="24.036176" data-lat=" 57.039986" class="map"></div>
-                            <!--map end-->
+                    
+
+                        <div class="col-md-6 col-5 img_section" style="background-image: url('{{asset('storage/photos/'.$photos->photo)}}')">
                         </div>
                     </div>
                 </div>

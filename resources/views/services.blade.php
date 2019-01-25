@@ -70,32 +70,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- <div class="col-md-6 col-12">
-                                            <div class="img_box_one text-left">
-                                                <img src="assets/img/icons/idea.png" alt="services icon">
-                                                <div class="content">
-                                                    <h5>
-                                                        Interior Design
-                                                    </h5>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <div class="img_box_one text-left">
-                                                <img src="assets/img/icons/satelite.png" alt="services icon">
-                                                <div class="content">
-                                                    <h5>
-                                                        Collateral Design
-                                                    </h5>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div> --}}
+                     
  <!--=================== services boxes end here  ====================-->
                                     </div>
                                 </div>

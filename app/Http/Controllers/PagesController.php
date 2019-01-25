@@ -33,7 +33,8 @@ class PagesController extends Controller
     }
 
     public function create(){
-        return view('contact');
+        $photos = Photo::where('id', 15)->first();
+        return view('contact',compact('photos'));
     }
 
     public function store(Request $request){

@@ -17,7 +17,7 @@ class PhotosController extends Controller
     public function index()
     {
        
-       $photos = Photo::orderBy('created_at', 'asc')->get();
+       $photos = Photo::orderBy('created_at', 'desc')->get();
        $categories = Category::pluck('name','id');
        
         return view('index')->with(compact('photos','categories'));

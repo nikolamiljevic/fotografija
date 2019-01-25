@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Photo;
 use App\Category;
+use Illuminate\Support\Facades\Storage;
 
 class AdminPhotosController extends Controller
 {
@@ -127,7 +128,14 @@ class AdminPhotosController extends Controller
     public function destroy($id)
     {
         $photo = Photo::find($id);
-        $photo->delete();
-        return redirect('admin');
+        // $photo->delete();
+        // return redirect('admin');
+
+        if(Storage::delete('public/photos/'.$photo->photo)){
+            $photo->delete();
+            return redirect('admin');
+           }
+
+
     }
 }
