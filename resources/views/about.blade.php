@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
         <!--=================== content body ====================-->
         <div class="col-lg-10 col-md-9 col-12 body_block  align-content-center">
             <div>
@@ -14,91 +12,39 @@
                                 <div class="content_box_inner">
                                     <div>
                                         <h3>
-                                            Just a few words about us
+                                            O meni 
                                         </h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus. Donec maximus ipsum non ornare vestibulum. Sed libero nibh, feugiat at enim id, bibendum sollicitudin arcu. Aliquam elit nibh, finibus eget mauris non, pretium vehicula ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                            Fotografijom sam poceo da se bavim 2014. godine inspirisan našim i stranim majstorima ulične fotografije.
+                                            To je ujedno i vrsta fotografije koju najviše volim. U početku kao i većina ljudi slikao sam sve što mi je delovalo 
+                                            zanimljivo, a toga je bilo mnogo, dok je kasnije  stil počeo da dobija svoju formu i da bude dosta svedeniji.
+                                            Vremenom sam počeo da trazim nove izazove pa sam tako krenuo prvo sa fotografisanjem događaja, a zatim i 
+                                            portreta koje smatram izuzetno zanimljivim
+                                            i vrlo pogodnim za kreativan rad. 
                                         </p>
-                                        <!--=================== counter start====================-->
-                                        <div class="pt50">
-                                            <div class="row justify-content-center">
-                                                <div class="col-12 col-md-4">
-                                                    <div class="counter_box">
-                                                        <div class="divider"></div>
-                                                        <span class="counter">12</span>
-                                                        <h5>Years of experience</h5>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <div class="counter_box">
-                                                        <div class="divider"></div>
-                                                        <span class="counter">257</span>
-                                                        <h5>happy clients</h5>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <div class="counter_box">
-                                                        <div class="divider"></div>
-                                                        <span class="counter">192</span>
-                                                        <h5>projects completed</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--=================== counter end====================-->
+                                        <p>Osim toga u mojim galerijama preovladavaju ulična, urbana i dokumentarna fotografija. Volim da hvatam scene sa ulica
+                                             u kojima ja vidim nešto, a onome ko gleda ostavljam da to doživi na svoj način.
+                                            Dobre fotografije su svuda oko nas tako da nije bitno gde se nalazim, uvek i svuda fotografišem jer me to ispunjava. 
+                                        </p>
+                            
                                     </div>
                                     <!--===================testimonial start====================-->
-                                    <div class="testimonial_carousel mt50">
-
-                                        <div class="testimonial_box">
-                                            <p>
-                                                "This nightscape is just delightful. I love the little pockets of light shining on the autumnal colors. There is an interesting mystery of this photograph, like the moments before *something* is about to happen. Great work creating a mood and suspense to a quiet moment."
-                                            </p>
-                                            <div class="testimonial_author">
-                                               
-                                                <h5>Kristen McNicholas</h5>
-                                                <p>Associate Photo Editor <span>Nat Geo Your Shot</span></p>
-                                            </div>
+                        
+                                        <div class="testimonial_carousel mt50">
+                                            @foreach( $quotes as $quote)
+                                                <div class="testimonial_box">
+                                                    <p>{{$quote->content}}</p>
+                                                        <div class="testimonial_author">
+                                                            <h5>{{$quote->name}}</h5>
+                                                        </div>
+                                                </div>
+                                            @endforeach
                                         </div>
-{{-- 
-                                        <div class="testimonial_box">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus.
-                                            </p>
-                                            <div class="testimonial_author">
-                                                
-                                                <h5>maria smith</h5>
-                                                <p>project manager <span>company</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="testimonial_box">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus.
-                                            </p>
-                                            <div class="testimonial_author">
-                                                
-                                                <h5>maria smith</h5>
-                                                <p>project manager <span>company</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="testimonial_box">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus.
-                                            </p>
-                                            <div class="testimonial_author">
-                                                
-                                                <h5>maria smith</h5>
-                                                <p>project manager <span>company</span></p>
-                                            </div>
-                                        </div> --}}
-                                    </div>
                                     <!--===================testimonial end====================-->
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-5 img_section" style="background-image: url('{{asset('storage/photos/'.$photos->photo)}}');"></div>
+                        <div class="col-md-6 col-5 img_section" style="background-image: url('{{asset('storage/photos/'.$photos->photo)}}')"></div>
                     </div>
                 </div>
             </div>

@@ -45,10 +45,15 @@
                                  <ul> 
                                
                                     <h4>Najnovije objave</h4>
+                                  
+                                    
                             @foreach($instagram as $insta)
+                        @if($insta->category_id == 4)
+                        @else
                             <li><a href="#"><img src="{{asset('storage/photos/'.$insta->photo)}}" alt="instagram"></a></li>
+                        @endif
                             @endforeach    
-                       
+   
                                 </ul>  
                             </div>
                             <div class="widget widget_tags">

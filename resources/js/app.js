@@ -7,19 +7,19 @@
 
 require('./bootstrap');
 
-require('./bootstrap-progressbar.min');
-require('./bootstrap.min');
-require('./imgloaded');
-require('./isotope');
-require('./jquery-migrate');
-require('./jquery.counterup.min');
-require('./jquery.magnific-popup.min');
-require('./jquery.min');
-require('./main');
-require('./popper');
-require('./slick');
-require('./waypoint.min');
-require('./wow.min');
+// require('./bootstrap-progressbar.min');
+// require('./bootstrap.min');
+// require('./imgloaded');
+// require('./isotope');
+// require('./jquery-migrate');
+// require('./jquery.counterup.min');
+// require('./jquery.magnific-popup.min');
+// require('./jquery.min');
+// require('./main');
+// require('./popper');
+// require('./slick');
+// require('./waypoint.min');
+// require('./wow.min');
 
 window.Vue = require('vue');
 

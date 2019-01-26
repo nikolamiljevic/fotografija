@@ -36,10 +36,10 @@
                                             </li>
                                             <li>
                                                 <div class="img_box_two">
-                                                    {{-- <img src="assets/img/icons/scheme.png" alt="info list"> --}}
+                                                   
                                                     <div class="content align-items-center">
                                                             <img src="{{asset('images/facebook.png')}}" alt="services icon" style="height:30px"></a> 
-                                                        <a href="#" style="color:black" target="_blanc">Facebook</a>
+                                                        <a href="https://www.facebook.com/nikola.miljevic.98" style="color:black" target="_blanc">Facebook</a>
                                                     </div>
                                                 </div>
                                             </li>
@@ -66,13 +66,13 @@
                                                     
                                                 </div>
                                                 <div class="col-12">
-                                                    <textarea  placeholder="Massage" class="form-control" name="message" cols="4" rows="4"></textarea>
+                                                    <textarea  placeholder="Message" class="form-control" name="message" cols="4" rows="4"></textarea>
                                             @if($errors->has('message'))
                                                     <small class="form-textarea invalid-feedback">{{$errors->first('message')}}</small>
                                             @endif
                                                 </div>
                                                 <div class="col-12">
-                                                    <button type="submit" class="btn btn-primary">Send</button>
+                                                    <button type="submit" class="btn btn-primary">Posalji</button>
                                                 </div>
                                             </div>
                                         </form>

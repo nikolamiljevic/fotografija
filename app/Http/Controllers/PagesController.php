@@ -6,17 +6,20 @@ use Illuminate\Http\Request;
 use App\Photo;
 use App\Category;
 use Mail;
+use App\Quotes;
 
 class PagesController extends Controller
 {
   
     public function about(){
-        $photos = Photo::where('id', 1)->first();
-        return view('about',compact('photos'));
+        $photos = Photo::where('id', 72)->first();
+        $quotes = Quotes::all();
+        return view('about',compact('photos','quotes'));
+      
     }
 
     public function services(){
-        $photos = Photo::where('id', 9)->first();
+        $photos = Photo::where('id', 69)->first();
 
         return view('services',compact('photos'));
     }
@@ -24,16 +27,16 @@ class PagesController extends Controller
     public function blog(){
         
        
-        $photos = Photo::where('id', 19)->first();
-        // $instagram = Photo::where('category_id','2')->take(3)->get();
-        $instagram = Photo::latest('created_at')->take(3)->get();
+        $photos = Photo::where('id', 87)->first();
         
+        $instagram = Photo::latest('created_at')->take(4)->get();
+       // return $instagram;
          return view('blog',compact('photos','instagram'));
       
     }
 
     public function create(){
-        $photos = Photo::where('id', 15)->first();
+        $photos = Photo::where('id', 64)->first();
         return view('contact',compact('photos'));
     }
 

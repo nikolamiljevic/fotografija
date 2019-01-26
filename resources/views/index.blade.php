@@ -79,7 +79,7 @@
                         </li>
                         <li>
                             <a href="{{url('contact')}}">
-                               Kotakt
+                               Kontakt
                             </a>
                         </li>
                     </ul>
@@ -99,7 +99,7 @@
 
                         @foreach ($categories as $category)
                         
-                    @if($category =='urban' || $category =='portraits' || $category =='street')
+                    @if($category =='urbana' || $category =='portreti' || $category =='street' || ($category =='hrana'))
                         <li data-filter=".{{$category}}"><a href="javascript:void(0)">{{$category}}</a></li>
                     @endif
                         @endforeach
@@ -114,20 +114,7 @@
                 <!--social and copyright -->
                 <div class="side_menu_bottom">
                     <div class="side_menu_bottom_inner">
-                        {{-- <ul class="social_menu">
-                            <li>
-                                <a href="#"> <i class="ion ion-social-pinterest"></i> </a>
-                            </li>
-                            <li>
-                                <a href="#"> <i class="ion ion-social-facebook"></i> </a>
-                            </li>
-                            <li>
-                                <a href="#"> <i class="ion ion-social-twitter"></i> </a>
-                            </li>
-                            <li>
-                                <a href="#"> <i class="ion ion-social-dribbble"></i> </a>
-                            </li>
-                        </ul> --}}
+              
                         <div class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
@@ -151,7 +138,10 @@
                     <div class="grid img-container justify-content-center no-gutters">   
                                                     <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
                         @foreach($photos as $photo) 
-                            @if($photo->category->name =='urban' || $photo->category->name=='portraits' || $photo->category->name=='street')
+                            {{-- @if($photo->category->name =='urbana' || $photo->category->name=='portreti' || $photo->category->name=='street' || ($category =='hrana'))
+                             --}}
+                             @if($photo->category->name =='other')
+                             @else
                                 <div class="grid-item {{$photo->category->name}}  col-sm-12 col-md-6 col-lg-3">
                                     <a href="{{asset('storage/photos/'.$photo->photo)}}" >
                                             <div class="project_box_one">
@@ -166,6 +156,7 @@
                                             </div>
                                         </a>
                                 </div>
+                               
                             @endif
                         @endforeach  
                     </div>

@@ -37,7 +37,8 @@
                                                        Fotografisanje proizvoda
                                                     </h5>
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum.
+                                                        Vlasnik ste preduzeca i zelite da prikazete svoj proizvod na najbolji nacin? Podignite vase poslovanje na visi nivo tako sto cemo
+                                                        zajednickom saradnjom napraviti originalne i autenticne fotografije vasih proizvoda koje mozete koristiti u razne svrhe.
                                                     </p>
                                                 </div>
                                             </div>
@@ -65,6 +66,8 @@
                                                     </h5>
                                                     <p>
                                                         Prikazite sebe u najboljem svetlu. Neka vasa jedinstvenost i kreativnost izadje u prvi plan.
+                                                        Sa druge strane ukoliko ste dizajner odece ili jednostavno zelite da promovisete odredjeni deo garderobe ili nakita 
+                                                        unapred se radujem saradnji.
                                                         
                                                     </p>
                                                 </div>
